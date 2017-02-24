@@ -25,8 +25,8 @@ _gaq.push(['_trackPageview']);
 	<link rel="stylesheet" type="text/css" href="../css/design.css" />
 	<link rel="stylesheet" type="text/css" href="../css/windy.css" />
 	<script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -174,7 +174,7 @@ _gaq.push(['_trackPageview']);
 				var $this = $(this);
 				var $span = $this.children('span');
 				$span.data('width',$span.width());
-				
+
 				$this.bind('mouseenter',function(){
 					$menu.find('.ldd_submenu').stop(true,true).hide();
 					$this.find('.ldd_submenu').slideDown(250);
@@ -183,9 +183,9 @@ _gaq.push(['_trackPageview']);
 				});
 			});
 		});
-	</script>	
+	</script>
     <script type="text/javascript" src="../js/jquery.windy.js"></script>
-	<script type="text/javascript">	
+	<script type="text/javascript">
 		$(function() {
 
 			var $el = $( '#wi-el' ),
@@ -197,37 +197,37 @@ _gaq.push(['_trackPageview']);
 
 				allownavprev = true;
 				navprev();
-			
+
 			} ).on( 'mouseup mouseleave', function( event ) {
 
 				allownavprev = false;
-			
+
 			} );
 
 			$( '#nav-next' ).on( 'mousedown', function( event ) {
 
 				allownavnext = true;
 				navnext();
-			
+
 			} ).on( 'mouseup mouseleave', function( event ) {
 
 				allownavnext = false;
-			
+
 			} );
 
 			function navnext() {
 				if( allownavnext ) {
 					windy.next();
-					setTimeout( function() {	
+					setTimeout( function() {
 						navnext();
 					}, 150 );
 				}
 			}
-			
+
 			function navprev() {
 				if( allownavprev ) {
 					windy.prev();
-					setTimeout( function() {	
+					setTimeout( function() {
 						navprev();
 					}, 150 );
 				}

@@ -24,8 +24,8 @@ _gaq.push(['_trackPageview']);
 	<link rel="stylesheet" type="text/css" href="../css/menu.css" />
 	<link rel="stylesheet" type="text/css" href="../css/design.css" />
 	<script src="../js/modernizr.custom.63321.js"></script>
-	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -135,7 +135,7 @@ _gaq.push(['_trackPageview']);
 				var $this = $(this);
 				var $span = $this.children('span');
 				$span.data('width',$span.width());
-				
+
 				$this.bind('mouseenter',function(){
 					$menu.find('.ldd_submenu').stop(true,true).hide();
 					$this.find('.ldd_submenu').slideDown(250);

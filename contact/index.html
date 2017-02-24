@@ -25,7 +25,7 @@ _gaq.push(['_trackPageview']);
 	<link rel="stylesheet" type="text/css" href="../css/design.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/forms.css"/>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -112,7 +112,7 @@ _gaq.push(['_trackPageview']);
 								<br><strong><label for="contactName">Name:</label></strong><br>
 								<input type="text" name="contactName" id="contactName" value="" class="txt requiredField"/>
 							</div>
-							<div class="halfblock">					
+							<div class="halfblock">
 								<br><strong><label for="email">Email:</label></strong><br>
 								<input type="text" name="email" id="email" value="" class="txt requiredField email" />
 							</div>
@@ -141,7 +141,7 @@ _gaq.push(['_trackPageview']);
 								<button name="submit" id="submitbutton" type="submit" class="myButton">Submit</button>
 							</div>
 							<input type="hidden" name="submitted" id="submitted" value="true" />
-						</form>		
+						</form>
 						<div id="clear"></div>
 					</div>
 				</div>
@@ -202,13 +202,13 @@ _gaq.push(['_trackPageview']);
 				if(!hasError) {
 					var formInput = $(this).serialize();
 					$.post($(this).attr('action'),formInput, function(data){
-						$('form#contact-us').slideUp("fast", function() {				   
+						$('form#contact-us').slideUp("fast", function() {
 							$(this).before('<p class="success">Thank You. We will respond to you ASAP.</p>');
 						});
 					});
 				}
-				
-				return false;	
+
+				return false;
 			});
 		});
 		//-->!]]>
@@ -220,7 +220,7 @@ _gaq.push(['_trackPageview']);
 				var $this = $(this);
 				var $span = $this.children('span');
 				$span.data('width',$span.width());
-				
+
 				$this.bind('mouseenter',function(){
 					$menu.find('.ldd_submenu').stop(true,true).hide();
 					$this.find('.ldd_submenu').slideDown(250);
