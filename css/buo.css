@@ -1,0 +1,9 @@
+#buologo {width:920px;}
+
+#leftcol{width:600px;display:inline;float:left;padding:20px;}
+#rightcol{width:300px;display:inline;float:left;padding:20px 0 0 20px;}
+#glink{float:right;margin-right:12px;}
+
+#contact{width:920px;display:inline;float:left;margin-top:20px;}
+#contact > img {width:60px; border-radius:30px;float:left;display:inline;margin-left:10px;}
+#contact > p {margin:10px 0 0 10px; width:140px; float:left;display:inline; }
