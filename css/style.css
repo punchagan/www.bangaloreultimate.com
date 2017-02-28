@@ -22,7 +22,7 @@ body { background-color:#eee; background: url("../images/bg.jpg") repeat scroll 
 /* HEADER */
 #header { height:600px; }
 .headerimg { background-position: center top; background-repeat: no-repeat; width:100%; height:600px; position:absolute; }
-	
+
 #header_upd, #header_reg, #header_tra, #header_sch, #header_con, #header_adv, #header_img
  { background-position: center top; background-repeat: no-repeat; width:100%; height:200px; }
 #header_img{background-image:url("../images/header_img.jpg");}
@@ -84,10 +84,11 @@ body { background-color:#eee; background: url("../images/bg.jpg") repeat scroll 
 #footer p{ font-size: 12px; text-shadow: 0 1px 1px #000000; padding: 3px 0;}
 #footer a{ color: #A6A6A6; text-decoration: none; text-shadow: 0 1px 1px #242422;}
 #footer a:hover{ color: #A6A6A6; text-decoration: underline; text-shadow: 0 1px 1px #242422;}
-#footer_right .icon-facebook, #footer_right .icon-twitter{ display: block; float: left; height: 32px; margin: 0 0 6px 6px; overflow: hidden; text-indent: -400px; width: 32px;}
+#footer_right .icon-facebook, #footer_right .icon-twitter, #footer_right .icon-instagram{ display: block; float: left; height: 32px; margin: 0 0 6px 6px; overflow: hidden; text-indent: -400px; width: 32px;}
 #footer_right .icon-facebook { background: url("../images/social_fb.png") no-repeat scroll 0 0 transparent;}
 #footer_right .icon-twitter { background: url("../images/social_twitter.png") no-repeat scroll 0 0 transparent;}
-#footer_right .icon-facebook:hover, #footer_right .icon-twitter:hover{ background-position: 0px -32px; }
+#footer_right .icon-instagram { background: url("../images/social_instagram.png") no-repeat scroll 0 0 transparent;}
+#footer_right .icon-facebook:hover, #footer_right .icon-twitter:hover, #footer_right .icon-instagram:hover{ background-position: 0px -32px; }
 
 /* GENERAL STYLING */
 p, strong, em, strike{ font-family: Georgia,"Times New Roman",Times,serif; font-size: 16px; margin: 0 0 20px;}
