@@ -1,2 +1,4 @@
 url: https://punchagan.github.io/
 baseurl: /www.bangaloreultimate.com/
+markdown: kramdown
+permalink: pretty
