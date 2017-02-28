@@ -1,4 +1,4 @@
-<div id="header_upd">
+<div id="header_{% if page.header %}{{page.header}}{% else %}img{% endif %}">
     <div id="logo_bg">
 	<div id="logo">
 	    <a href="{{site.baseurl}}"><img src="{{site.baseurl}}images/logo.png"></a>
