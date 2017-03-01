@@ -1,0 +1,27 @@
+- name: Air Benders
+  url: airbenders
+  logo: images/logo/ab.jpg
+
+- name: Air Traffic Control
+  url: airtrafficcontrol
+  logo: images/logo/atc.jpg
+
+- name: Disc-o-Deewane
+  url: discodeewane
+  logo: images/logo/dod.jpg
+
+- name: Falcons
+  url: falcons
+  logo: images/logo/falcons.jpg
+
+- name: Learning To Fly
+  url: learningtofly
+  logo: images/logo/l2f.jpg
+
+- name: See Emily Play
+  url:
+  logo: images/logo/nopic.jpg
+
+- name: Thatte Idli Kaal Soup
+  url: thatteidlikaalsoup
+  logo: images/logo/tiks.jpg

@@ -63,13 +63,13 @@
 			<span>BU Teams</span>
 			<div class="ldd_submenu">
 			    <ul>
-				<li><a href="{{site.baseurl}}airbenders/">Airbenders</a></li>
-				<li><a href="{{site.baseurl}}airtrafficcontrol/">Air Traffic Control</a></li>
-				<li><a href="{{site.baseurl}}discodeewane/">Disc O Deewane</a></li>
-				<li><a href="{{site.baseurl}}falcons/">Falcons</a></li>
-				<li><a href="{{site.baseurl}}learningtofly/">Learning to Fly</a></li>
-				<li><a class="pink">See Emily Play</a></li>
-				<li><a href="{{site.baseurl}}thatteidlikaalsoup/">Thatte Idli Kaal Soup</a></li>
+                                {% for team in site.data.teams %}
+                                <li>
+                                    <a {% if team.url %}href="{{site.baseurl}}{{team.url}}/"{% else %}class="pink"{% endif %}>
+                                        {{team.name}}
+                                    </a>
+                                </li>
+                                {% endfor %}
 			    </ul>
 			</div>
 		    </li>

@@ -17,13 +17,12 @@ extra_js:
 </div>
 <div id="content_half">
     <h3>Teams In Bangalore</h3>
-    <a href="{{site.baseurl}}airbenders/"><img class="ad" src="{{site.baseurl}}images/logo/ab.jpg"></a>
-    <a href="{{site.baseurl}}airtrafficcontrol/"><img class="ad" src="{{site.baseurl}}images/logo/atc.jpg"></a>
-    <a href="{{site.baseurl}}discodeewane/"><img class="ad" src="{{site.baseurl}}images/logo/dod.jpg"></a>
-    <a href="{{site.baseurl}}falcons/"><img class="ad" src="{{site.baseurl}}images/logo/falcons.jpg"></a>
-    <a href="{{site.baseurl}}learningtofly/"><img class="ad" src="{{site.baseurl}}images/logo/l2f.jpg"></a>
-    <a><img class="ad" src="images/logo/nopic.jpg"></a>
-    <a href="{{site.baseurl}}thatteidlikaalsoup/"><img class="ad" src="{{site.baseurl}}images/logo/tiks.jpg"></a>
+    {% for team in site.data.teams %}
+    <a {% if team.url %}href="{{site.baseurl}}{{team.url}}/"{% endif %}
+       alt="{{team.name}}" title="{{team.name}}">
+        <img class="ad" src="{{site.baseurl}}{{team.logo}}">
+    </a>
+    {% endfor %}
 </div>
 <div id="content_full">
     <a href="{{site.baseurl}}open/"><img src="{{site.baseurl}}images/wide_BUO.jpg"></a>
